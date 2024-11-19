@@ -1,0 +1,3 @@
+[submodule "submodules/Amulet-Test1"]
+	path = submodules/Amulet-Test1
+	url = https://github.com/Amulet-Team/Amulet-Test1
