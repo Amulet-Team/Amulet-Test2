@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "setuptools >= 42",
+    "wheel",
+    "pybind11 ~= 2.12",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amulet_test2"
+authors = [
+    {name = "James Clare"},
+]
+description = "test_package2"
+dynamic = ["version", "readme"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "amulet_base @ file:///D:/Github/Amulet-Base",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "amulet.test2.__version__"}
+readme = {file = ["README.md"], content-type = "text/markdown"}
