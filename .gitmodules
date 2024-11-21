@@ -1,6 +1,0 @@
-[submodule "submodules/Amulet-Test1"]
-	path = submodules/Amulet-Test1
-	url = https://github.com/Amulet-Team/Amulet-Test1
-[submodule "submodules/pybind11"]
-	path = submodules/pybind11
-	url = https://github.com/pybind/pybind11
