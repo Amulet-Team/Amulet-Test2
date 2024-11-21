@@ -19,10 +19,12 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-dependencies = [
-    "amulet_base @ file:///D:/Github/Amulet-Base",
+[tool.setuptools.packages.find]
+where = [
+    "src",
+    "submodules/Amulet-Test1/src",
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "amulet.test2.__version__"}
+version = {attr = "amulet_test2.__version__"}
 readme = {file = ["README.md"], content-type = "text/markdown"}

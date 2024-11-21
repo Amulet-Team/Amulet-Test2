@@ -1,0 +1,10 @@
+recursive-include submodules/pybind11/include *.h
+include submodules/pybind11/CMakeLists.txt
+recursive-include submodules/pybind11/tools *
+include submodules/pybind11/LICENSE
+
+recursive-include submodules/Amulet-Test1/src *
+include submodules/Amulet-Test1/CMakeLists.txt
+
+recursive-include src *.hpp *.cpp
+include CMakeLists.txt
