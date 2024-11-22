@@ -2,7 +2,8 @@
 requires = [
     "setuptools >= 42",
     "wheel",
-    "pybind11 ~= 2.12",
+    "pybind11[global] == 2.13.6",
+    "amulet_test1 @ file:///D:/Github/Amulet-Test1"
 ]
 build-backend = "setuptools.build_meta"
 
@@ -18,11 +19,8 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-
-[tool.setuptools.packages.find]
-where = [
-    "src",
-    "submodules/Amulet-Test1/src",
+dependencies = [
+    "amulet_test1 @ file:///D:/Github/Amulet-Test1"
 ]
 
 [tool.setuptools.dynamic]
